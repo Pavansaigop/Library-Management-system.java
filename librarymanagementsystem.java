@@ -3,16 +3,17 @@ import java.time.format.*;
 import java.util.*;
 class main{
 public static void main(String args[]){
+      try{
 	Scanner sc=new Scanner(System.in);
-	System.out.println("|---------------------------------------------------------------------------------|");
+	System.out.println("|===============================================================|");
 	System.out.println("|                      LOGIN CREDENTIALS                                ");
-	System.out.println("|---------------------------------------------------------------------------------|");
+	System.out.println("|===============================================================|");
 	System.out.println("|   Enter your Registration number -                               ");
-	System.out.println("|---------------------------------------------------------------------------------|");
 	System.out.println("|   Enter your Password -                            ");
-	System.out.println("|---------------------------------------------------------------------------------|");
+	System.out.println("|===============================================================|");
 	int regno=sc.nextInt();
 	int psword=sc.nextInt();
+           
 	if(regno== 12106348&&psword==123|| regno==12106349&&psword==123||regno==12106347&&psword==123){
 		LocalDate idp=LocalDate.now();
 		LocalTime idi=LocalTime.now();
@@ -45,7 +46,8 @@ public static void main(String args[]){
 	System.out.println("|------------------------------------------------------------------------------------------------------------------------|");
     int no=sc.nextInt();
 	String nc;
-	     if(no==1){
+	     switch(no){
+		 case 1 :
 		System.out.println("|----------------------------------------------------------------------|");
 		System.out.println("|Enter your name-");
 		System.out.println("|----------------------------------------------------------------------|");
@@ -59,7 +61,6 @@ public static void main(String args[]){
 		System.out.println("|                        Book Discussion Room                                ");
 		System.out.println("|----------------------------------------------------------------------|");
 		System.out.println("|                        1 - Please Select -Room type                      ");
-		System.out.println("|----------------------------------------------------------------------|");
 		System.out.println("|                        2-  Please Select -Timmimgs                       ");
 		System.out.println("|----------------------------------------------------------------------|");
 		System.out.println("|                      Please Select Your Code                                 ");
@@ -73,9 +74,7 @@ public static void main(String args[]){
 	 		  System.out.println("|                   Rooms Avaiable                                                     ");
 			   System.out.println("|-------------------------------------------------------------------------|");
 			   System.out.println("|                     1- 4-seater                                                             ");
-	 		   System.out.println("|-------------------------------------------------------------------------|");
 	 		   System.out.println("|                     2- 8-seater                                                            ");
-	  		   System.out.println("|-------------------------------------------------------------------------|");
 	  		   System.out.println("|                     3-16-seater                                                            ");
 	   		   System.out.println("|-------------------------------------------------------------------------|");
 	
@@ -89,7 +88,6 @@ public static void main(String args[]){
 	          System.out.println("|                         Timmings Avaiable-                                                              ");
 	          System.out.println("|----------------------------------------------------------------------------------------|");
 	          System.out.println("|                          1-from-8:00 to 10:00pm                                                    ");
-	          System.out.println("|----------------------------------------------------------------------------------------|");
 	          System.out.println("|                          2-from-10:00 to 12:00pm                                                  ");
 	          System.out.println("|----------------------------------------------------------------------------------------|");
 
@@ -128,22 +126,19 @@ public static void main(String args[]){
 			  System.out.println("|--------------------------------------------------------------------------------------------------------|");
 			  System.out.println("|                                  KINDLY VACATE ROOM ON TIME!                         ");
 			  System.out.println("|--------------------------------------------------------------------------------------------------------|");
-	            }
+	            break;
 	
-	 if(no==2){
+	 case 2:
 		System.out.println("|---------------------------------------------------------------------------------------|");
 		System.out.println("|                                 Types of Books                                                             ");
 		System.out.println("|---------------------------------------------------------------------------------------|");
 		System.out.println("|                               1-  Course related Books                                                           ");
-		System.out.println("|---------------------------------------------------------------------------------------|");
 		System.out.println("|                               2-  General Knowledge                                                  ");		
-		System.out.println("|---------------------------------------------------------------------------------------|");
 		System.out.println("|                               3-    Novels                                                                      ");		
-		System.out.println("|---------------------------------------------------------------------------------------|");
        System.out.println("|                               4-  Story Books                                               ");		
-		System.out.println("|---------------------------------------------------------------------------------------|");
+       System.out.println("|---------------------------------------------------------------------------------------|");
 		System.out.println("|                            Please Select Your Code!                                                      ");
-	System.out.println("|-----------------------------------------------------------------------------------------|");
+	   System.out.println("|-----------------------------------------------------------------------------------------|");
 		
 	
 
@@ -153,11 +148,8 @@ public static void main(String args[]){
 			System.out.println("|                                   TYPES OF COURSES AVAILABLE                                 "  );
 			System.out.println("|----------------------------------------------------------------------------------------|");
 			System.out.println("|                             1- Computer Science Engineering                         ");
-			System.out.println("|----------------------------------------------------------------------------------------|");
 			System.out.println("|                             2- Electricals Commuinction Engineering            ");
-			System.out.println("|----------------------------------------------------------------------------------------|");
 			System.out.println("|                              3- Mechinical Engineering                                       ");
-			System.out.println("|----------------------------------------------------------------------------------------|");
 			System.out.println("|                              4- Civil Engineering                                                  ");
 			System.out.println("|----------------------------------------------------------------------------------------|");
 			System.out.println("|                               PICK YOUR COURSE !                                         |");
@@ -168,11 +160,8 @@ public static void main(String args[]){
 				if(e==1){
 			System.out.println("|---------------------------------------------------------------------------------------------|");
 			System.out.println("|                    1-  1st Year                                                                                            ");
-			System.out.println("|---------------------------------------------------------------------------------------------|");
 			System.out.println("|                    2-  2nd Year                                                                                            ");
-			System.out.println("|---------------------------------------------------------------------------------------------|");
 			System.out.println("|                    3-  3rd Year                                                                                            ");
-			System.out.println("|---------------------------------------------------------------------------------------------|");
 			System.out.println("|                    4-  4th Year                                                                                            ");
 			System.out.println("|---------------------------------------------------------------------------------------------|");
 			System.out.println("|                  Select  your year !                                                                                         ");
@@ -183,7 +172,6 @@ public static void main(String args[]){
 			
 			System.out.println("|-------------------------------------------------------------------------------------|");
 			System.out.println("|                       1-  SEM-1                                                                             ");
-			System.out.println("|-------------------------------------------------------------------------------------|");
 			System.out.println("|                       2-  SEM-2                                                                            ");
 			System.out.println("|-------------------------------------------------------------------------------------|");
 			System.out.println("|                   Select your  Sem!                                                                  ");
@@ -197,17 +185,11 @@ public static void main(String args[]){
 					System.out.println("|              Course Codes for 1nd year- 1nd sem students                                             ");
 					 System.out.println("|-----------------------------------------------------------------------------------------|");
 					System.out.println("|              1-Cse-101 (C-language)                                                  ");
-					System.out.println("|-----------------------------------------------------------------------------------------|");
 					System.out.println("|              2-ECE-131   (Basic Electronics Engineering)                                                                              ");
-					System.out.println("|-----------------------------------------------------------------------------------------|");
 					System.out.println("|              3-ECE-132     (Basic Electronics Engineering Lab)                                          ");
-					System.out.println("|-----------------------------------------------------------------------------------------|");
 					System.out.println("|              4-MEC-103   (Engineering Graphs)                                                                      ");
-					System.out.println("|-----------------------------------------------------------------------------------------|");
 					System.out.println("|              5-MTH-165   (Mathematics For Enginners)                                          ");
-					System.out.println("|-----------------------------------------------------------------------------------------|");
 					System.out.println("|              6-PHY-109   (Engineering Physics)                                                          ");
-					System.out.println("|-----------------------------------------------------------------------------------------|");
 					System.out.println("|              7-PES-318    (Soft-Skills-1)                                                                    ");
 					System.out.println("|-----------------------------------------------------------------------------------------|");
 					System.out.println("|                 Please Select your Course Code!                                      ");
@@ -283,17 +265,11 @@ public static void main(String args[]){
 						System.out.println("|              Course Codes for 1nd year- 2nd sem students                                             ");
 						 System.out.println("|-----------------------------------------------------------------------------------------|");
 						System.out.println("|              1-CSE-202 (C++ -language)                                                  ");
-						System.out.println("|-----------------------------------------------------------------------------------------|");
 						System.out.println("|              2-ECE-213   (Digital Electronics)                                                                              ");
-						System.out.println("|-----------------------------------------------------------------------------------------|");
 						System.out.println("|              3-ECE-216    (Digital Electronics Laboratory)                                          ");
-						System.out.println("|-----------------------------------------------------------------------------------------|");
 						System.out.println("|              4-MEC-107   (Basic Engineering Mechanics)                                                                      ");
-						System.out.println("|-----------------------------------------------------------------------------------------|");
 						System.out.println("|              6-MTH-166   (Vector Calculus)                                          ");
-						System.out.println("|-----------------------------------------------------------------------------------------|");
 						System.out.println("|              5-CHE-110   (Environmental Chemistry)                                                          ");
-						System.out.println("|-----------------------------------------------------------------------------------------|");
 						System.out.println("|              5-PEL-121    (Communication Skills-1)                                                                    ");
 						System.out.println("|-----------------------------------------------------------------------------------------|");
 						System.out.println("|                 Please Select your Subject!                                       ");
@@ -344,17 +320,11 @@ public static void main(String args[]){
 				System.out.println("|              Course Codes for 2nd year- 2nd sem students                                             ");
  				System.out.println("|-----------------------------------------------------------------------------------------|");
 				System.out.println("|              1-Int-404 (Artificial Intellegience)                                                  ");
-				System.out.println("|-----------------------------------------------------------------------------------------|");
 				System.out.println("|              2-Cse-310   (Java)                                                                              ");
-				System.out.println("|-----------------------------------------------------------------------------------------|");
 				System.out.println("|              3-Cse-211     (Computer Organization)                                          ");
-				System.out.println("|-----------------------------------------------------------------------------------------|");
 				System.out.println("|              4-Cse-325   (Lab linux)                                                                      ");
-				System.out.println("|-----------------------------------------------------------------------------------------|");
 				System.out.println("|              5-Mth-302   (Probability and statictics)                                          ");
-				System.out.println("|-----------------------------------------------------------------------------------------|");
 				System.out.println("|              6-Pea-305   (Analytical-Skills)                                                          ");
-				System.out.println("|-----------------------------------------------------------------------------------------|");
 				System.out.println("|              7-Pes-301    (Soft-Skills)                                                                    ");
 				System.out.println("|-----------------------------------------------------------------------------------------|");
 				System.out.println("|                 Please Select your Subject!                                      ");
@@ -457,26 +427,21 @@ public static void main(String args[]){
 		}
 		System.out.println("|-------------------------------------------------------------------------------------------|");
 	}			
-            }
-	if(no==3){		
+            break;
+	case 3:		
 	System.out.println("|-------------------------------------------------------------------------|");
 	System.out.println("|                         Select Your  Type                                        ");
 	System.out.println("|-------------------------------------------------------------------------|");
 	System.out.println("|                   1-    Books To Be Borrowed                                 ");
-	System.out.println("|-------------------------------------------------------------------------|");
 	System.out.println("|                   2-    Books To Be Returned                                  ");
 	System.out.println("|-------------------------------------------------------------------------|");
 		int o=sc.nextInt();
 		if(o==1){
 			System.out.println("|---------------------------------------------------------------------------------------|");
             System.out.println("|             1-Enter your Name"                                                              );
-			System.out.println("|---------------------------------------------------------------------------------------|");
             System.out.println("|            2 -Enter your Reg no"                                                              );
-			System.out.println("|---------------------------------------------------------------------------------------|");
             System.out.println("|             3-Enter your Current Year"                                                              );
-			System.out.println("|---------------------------------------------------------------------------------------|");
 			System.out.println("|             4-Enter your Current Sem"                                                              );
-			System.out.println("|------------------------------------------------------------------------------------------|");
 			System.out.println("|             5- Enter Your Details of Book                                                           ");
 			System.out.println("|-----------------------------------------------------------------------------------------|");
 			sc.nextLine();
@@ -486,21 +451,21 @@ public static void main(String args[]){
 			int Sem=sc.nextInt();
 			sc.nextLine();
 			String Details=sc.nextLine();
-			LocalDate idd=LocalDate.now();
-			LocalTime idt=LocalTime.now();
-			DateTimeFormatter f=DateTimeFormatter.ofPattern("H:mm");
+			LocalDate idq=LocalDate.now();
+			LocalTime idh=LocalTime.now();
+			DateTimeFormatter x=DateTimeFormatter.ofPattern("H:mm");
 			System.out.println("|-----------------------------------------------------------------------------------------------------------------------------|");
 			System.out.println("|                                            LIBRARY ISSUE CARD TO BORROW BOOK                                         ");
 			System.out.println("|------------------------------------------------------------------------------------------------------------------------------|");
-			System.out.println("|                                                                                  Borrow Date:"+idd);
-			System.out.println("|                                                                                  Time:"+f.format(idt));
+			System.out.println("|                                                                                  Borrow Date:"+idq);
+			System.out.println("|                                                                                  Time:"+x.format(idh));
 
 			System.out.println("|Student Name-"+peru);
 			System.out.println("|Student RegNo-"+studentregno);
 			System.out.println("|Current Year-"+Year );
 			System.out.println("|Current Sem-"+Sem);
 			System.out.println("|Details of Book-"+Details);
-			System.out.println("|                                                                                  ReturnDate-"+idd.plusDays(7));
+			System.out.println("|                                                                                  ReturnDate-"+idq.plusDays(7));
 			System.out.println("|-----------------------------------------------------------------------------------------------------------------------------|");
 			System.out.println("|                                   BOOK HAS BEEN ISSUED SUCCESSFULLY                                       ");
 			System.out.println("|-----------------------------------------------------------------------------------------------------------------------------|");
@@ -510,13 +475,9 @@ public static void main(String args[]){
 if(o==2){
 	System.out.println("|---------------------------------------------------------------------------------------|");
 	System.out.println("|                      1-Enter your Name"                                                              );
-	System.out.println("|---------------------------------------------------------------------------------------|");
 	System.out.println("|                     2 -Enter your Reg no"                                                              );
-	System.out.println("|---------------------------------------------------------------------------------------|");
 	System.out.println("|                   3-Enter your Current Year"                                                              );
-	System.out.println("|---------------------------------------------------------------------------------------|");
 	System.out.println("|                   4-Enter your Current Sem"                                                              );
-	System.out.println("|------------------------------------------------------------------------------------------|");
 	System.out.println("|                    5- Enter Your Details of Book                                                           ");
 	System.out.println("|-----------------------------------------------------------------------------------------|");
 	sc.nextLine();
@@ -526,39 +487,36 @@ if(o==2){
 	int Sem=sc.nextInt();
 	sc.nextLine();
 	String Details=sc.nextLine();
-			LocalDate idd=LocalDate.of(2023,03,27);
-			LocalTime idt=LocalTime.now();
-			LocalDate idz=LocalDate.now();
-			DateTimeFormatter f=DateTimeFormatter.ofPattern("H:mm");
+			LocalDate ido=LocalDate.of(2023,04,19);
+			LocalTime idu=LocalTime.now();
+			LocalDate idy=LocalDate.now();
+			DateTimeFormatter r=DateTimeFormatter.ofPattern("H:mm");
 			System.out.println("|-----------------------------------------------------------------------------------------------------------------------------|");
 			System.out.println("|                                          LIBRARY ISSUE CARD  TO RETURN BOOKS                                 ");
 			System.out.println("|-----------------------------------------------------------------------------------------------------------------------------|");
-			System.out.println("|                                                                                         IssuedDate:"+idd);
-			System.out.println("|                                                                                         ReturningDate:"+idz);
-			System.out.println("|                                                                                         Time:"+f.format(idt));
+			System.out.println("|                                                                                         IssuedDate:"+ido);
+			System.out.println("|                                                                                         ReturningDate:"+idy);
+			System.out.println("|                                                                                         Time:"+r.format(idu));
 			System.out.println("|Student Name-"+peru);
 			System.out.println("|Student RegNo-"+studentregno);
 			System.out.println("|Current Year-"+Year );
 			System.out.println("|Current Sem-"+Sem);
 			System.out.println("|Details of Book-"+Details);
-			System.out.println("|                                                                                  ReturnDate-"+idd.plusDays(7));
+			System.out.println("|                                                                                  ReturnDate-"+ido.plusDays(7));
 			System.out.println("|-----------------------------------------------------------------------------------------------------------------------------|");
 			System.out.println("|                                   BOOK HAS BEEN RETURNED SUCCESSFULLY                                       ");
 			System.out.println("|-----------------------------------------------------------------------------------------------------------------------------|");
 			System.out.println("|                                THANKS FOR RETURNING THE BOOK ON THE DATE                             ");
 			System.out.println("|-----------------------------------------------------------------------------------------------------------------------------|");
 	}
-}
-if(no==4){
+break;
+case 4:
        System.out.println("|----------------------------------------------------------------------------------------|");  
        System.out.println("|                                 Types of Books                                                             ");
 		System.out.println("|---------------------------------------------------------------------------------------|");
 		System.out.println("|                               1-  Course related Books                                              ");
-		System.out.println("|---------------------------------------------------------------------------------------|");
 		System.out.println("|                               2-  General Knowledge                                                  ");		
-		System.out.println("|---------------------------------------------------------------------------------------|");
 		System.out.println("|                               3-    Novels                                                                      ");		
-		System.out.println("|---------------------------------------------------------------------------------------|");
        System.out.println("|                               4-  Story Books                                                               ");		
 		System.out.println("|---------------------------------------------------------------------------------------|");
 		System.out.println("|                            Please Select Your Code!                                                 ");
@@ -615,8 +573,27 @@ if(no==4){
 		System.out.println("|                     "+str+"- STORY  RELATED BOOKS AVAILABLE AT 4th FLOOR");
 		System.out.println("|^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|");
 	   }
+	   break;
+	   default:
+	   System.out.println("             ENTER ONLY THE ABOVE CODES                    ");
 	}
 
+
 }
+else{
+	System.out.println("|==============================================================|");
+	System.out.println("|                 PLEASE ENTER VALID LOGIN DETAILS                  ");
+	System.out.println("|==============================================================|");
+
+
+}
+
+      }
+    catch(Exception exception){
+        System.out.println("|=============================================================================");
+        System.out.println("|                      SORRY YOU HAVE ENTERED WRONG CODE                                         ");
+        System.out.println("|=============================================================================");
+      }
+	  
 }
 }
